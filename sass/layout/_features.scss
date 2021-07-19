@@ -1,0 +1,61 @@
+@import "../utils/variables";
+.features {
+  display: flex;
+  &__item-featires {
+    flex-basis: calc((100% / 4) - 30px);
+    & .__item:not(:first-child) {
+      margin-left: 60px;
+    }
+  }
+  &__paragraph {
+    color: $secondary-color;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__item-featires:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.featires-icon-list {
+  display: flex;
+  align-items: baseline;
+  flex-basis: calc((100% / 4)-30);
+  &__list-item-icon {
+    background-color: $buttom-bg;
+    width: 262px;
+    height: 120px;
+    & + & {
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  &__list-icon-icon {
+    margin-top: 25px;
+    margin-left: 0;
+    width: 70px;
+    height: 70px;
+    margin-left: 100px;
+  }
+  &__list-item-icon + &__list-item-icon {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  & .__icon {
+    margin-top: 25px;
+    margin-left: 0;
+    width: 70px;
+    height: 70px;
+    margin-left: 100px;
+  }
+}

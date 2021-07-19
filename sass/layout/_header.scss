@@ -1,0 +1,93 @@
+@import "../utils/variables";
+.header {
+  border-bottom: 1px solid $border-solid;
+  &-nav {
+    display: flex;
+    align-items: center;
+  }
+  & .container {
+    display: flex;
+  }
+}
+
+.nav-list {
+  display: flex;
+  &__item:first-child {
+    margin-left: 93px;
+  }
+  &__link {
+    color: $main-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    padding: 32px 0px 0px 0px;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  &__item {
+    margin-left: 50px;
+  }
+}
+
+.current::after {
+  display: flex;
+  border-bottom: 4px solid $accent-color;
+  content: "";
+  margin-top: 28px;
+  color: $accent-color;
+  padding: 0;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  &__mail-tell {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $secondary-color;
+    margin-left: auto;
+    display: flex;
+    fill: $secondary-color;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    :hover .service-icon {
+      fill: $accent-color;
+      color: $accent-color;
+    }
+  }
+  &__mail-tell:hover,
+  &__mail-tell:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+  &__icon {
+    margin-right: 10px;
+    padding: 0;
+    display: inline-block;
+    width: 12px;
+  }
+  &__mail-tell + &__mail-tell {
+    margin-left: 50px;
+  }
+}
+
+.header-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: end;
+}

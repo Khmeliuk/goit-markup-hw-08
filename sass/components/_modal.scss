@@ -1,0 +1,161 @@
+@import "../utils/variables";
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: $banner-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: 2px $secondary-bg-color;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal__close-buttom {
+  background-image: url(../images/Vector.svg);
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 11px, 11px;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-color: transparent;
+  top: 8px;
+  right: 8px;
+}
+.backdrop.js-hidden {
+  opacity: o;
+  pointer-events: none;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal__title {
+  margin: 40px 40px 12px 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-color;
+}
+.modal__input-text {
+  display: block;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: $secondary-color;
+}
+.modal__label-container {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+.modal__check-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+  & > a {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: line;
+    color: $accent-color;
+  }
+}
+
+.modal__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition-property: border-solid;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+.model__comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  display: block;
+  padding: 12px 16px;
+  transition-property: border-solid;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+.modal__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__input-wrap {
+  position: relative;
+}
+.model__comment::placeholder {
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  padding: 12px 16px;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__input:focus {
+  border: solid $accent-color;
+  &:focus + .modal__icon {
+    fill: $accent-color;
+  }
+}
+
+.modal__check-text {
+  display: flex;
+  align-items: center;
+}
+.modal__check-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #090b13;
+  border-radius: 2px;
+  margin-right: 7px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.phantom-check {
+  fill: $banner-color;
+}
+.phantome-input:checked + .modal__check-text span {
+  fill: $accent-color;
+  border: none;
+  background-color: $hower-bg-buttom-color;
+}
+.model__comment:focus {
+  border-color: $accent-color;
+}

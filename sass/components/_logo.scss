@@ -1,0 +1,20 @@
+@import "../utils/variables";
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo--blue {
+  color: $accent-color;
+}
+
+.logo--black {
+  color: $logo-black-color;
+}
+.logo--white {
+  color: $banner-color;
+}
