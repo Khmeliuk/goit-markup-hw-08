@@ -131,7 +131,7 @@ body {
 .banner-section {
   background-color: #2f303a;
   background: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/desktop/hero-min.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hero-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -157,7 +157,7 @@ body {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2 / 1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner-section .banner-section {
-    background-image: url("/images/desktop/hero2x-min.jpg");
+    background-image: url(".././images/desktop/hero2x-min.jpg");
   }
 }
 

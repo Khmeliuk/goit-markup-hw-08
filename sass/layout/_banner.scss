@@ -6,7 +6,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/desktop/hero-min.jpg);
+    url(../images/desktop/hero-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -30,7 +30,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .banner-section {
-      background-image: url("/images/desktop/hero2x-min.jpg");
+      background-image: url(".././images/desktop/hero2x-min.jpg");
     }
   }
   &__title {
