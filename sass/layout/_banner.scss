@@ -6,36 +6,53 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero.jpg);
+    url(/images/mobile/Header-img-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
+  max-width: 480px;
+  max-width: 100%;
+  height: auto;
   margin: auto auto;
-  & {
-    color: $banner-color;
-    font-weight: 900;
-    padding-top: 200px;
-    margin-bottom: 30px;
+  display: block;
+  color: $banner-color;
+  font-weight: 900;
+  // padding-top: 200px;
+  // margin-bottom: 30px;
+  @media screen and(min-width:768px) {
+    max-width: 1199px;
+  }
+  @media screen and(min-width:1200px) {
+    max-width: 1600px;
   }
   &__title {
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    // font-size: 44px;
+    // line-height: 1.36;
+    line-height: 1.6;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $banner-color;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding-top: 118px;
   }
   &__pad-but {
-    padding-bottom: 200px;
+    // padding-bottom: 200px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-widht: 480px) {
   }
 }
 
 .section__title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.8;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }

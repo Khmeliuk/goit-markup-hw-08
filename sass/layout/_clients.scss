@@ -1,14 +1,28 @@
 @import "../utils/variables";
 .clients {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: -30px;
+  margin-left: -30px;
+
   &__company {
     margin-left: 30px;
-
+    flex-basis: calc((100% / 2) - 30px);
+    height: 92px;
+    margin-bottom: 30px;
     &:hover > .clients__icon {
       border: $accent-color solid 1px;
       fill: $accent-color;
       cursor: pointer;
+    }
+    @media screen and(min-width:768px) {
+      max-width: 768px;
+      flex-basis: calc((100% / 3) - 30px);
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      flex-basis: calc((100% / 6) - 30px);
     }
   }
   &__icon {
@@ -16,6 +30,8 @@
     border-radius: 4px;
     display: block;
     padding: 16px 32px;
+    width: 100%;
+    // margin: auto auto;
     fill: #afb1b8;
     transition-property: border, fill;
     transition-duration: 250ms;

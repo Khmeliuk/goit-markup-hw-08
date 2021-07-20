@@ -1,6 +1,10 @@
 @import "../utils/variables";
 .whotwedo-section {
   padding-top: 0px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .whotwedo-list {
   display: flex;

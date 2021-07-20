@@ -1,7 +1,12 @@
 @import "../utils/variables";
 .filter-nav {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  justify-content: start;
+  @media screen and(min-width:768px) {
+    justify-content: center;
+  }
   margin-bottom: 50px;
   & + & {
     margin-left: 8px;
@@ -53,13 +58,24 @@
 }
 
 .spec {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // display: flex;
+  // flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
   &__cards {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% / 2) - 30px);
+    }
+    @media screen and(min-width:1200px) {
+      flex-basis: calc((100% / 3) - 30px);
+    }
     outline: 1px solid $border-solid-secondary;
-    flex-basis: calc((100 / 3)-30px);
+    // flex-basis: calc((100 / 3)-30px);
     margin-left: 30px;
     margin-top: 30px;
   }
