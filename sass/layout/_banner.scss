@@ -13,7 +13,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/mobile/Heade2x-min.jpg);
+        url(../images/mobile/Heade2x-min.jpg);
     }
   }
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/tablet/header.jpg);
+        url(../images/tablet/header.jpg);
     }
     @media (min-resolution: 2dppx) {
       & {
@@ -43,7 +43,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url(/images/tablet/Header2x-min.jpg);
+          url(../images/tablet/Header2x-min.jpg);
       }
     }
   }
@@ -55,7 +55,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/desktop/hero-min.jpg);
+        url(../images/desktop/hero-min.jpg);
     }
     @media (min-resolution: 2dppx) {
       & {
@@ -63,7 +63,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url(/images/desktop/hero2x-min.jpg);
+          url(../images/desktop/hero2x-min.jpg);
       }
     }
   }
