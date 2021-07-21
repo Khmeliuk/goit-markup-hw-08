@@ -25,10 +25,11 @@
                     class="logo--black">Studio</span>
             </a>
             <ul class="nav-list list ">
-                <li class="nav-list__item"> <a class="nav-list__link  " href="./index.html">Студия</a></li>
-                <li class="nav-list__item"> <a class="nav-list__link current" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav-list__item"> <a class="nav-list__link current " href="">Студия</a></li>
+                <li class="nav-list__item"> <a class="nav-list__link" href="./portfolio.html">Портфолио</a></li>
                 <li class="nav-list__item"> <a class="nav-list__link" href="">Контакты</a></li>
             </ul>
+
         </nav>
         <div class="contact">
 
@@ -40,7 +41,43 @@
                     <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg> +38 096 111 11 11</a>
         </div>
+        <button class="open-buttom" type="button"> <svg class="open-icon-buttom">
+                <use href="./images/spritetree.svg#nmenu_24px"></use>
+            </svg></button>
     </div>
+
+    <div class="header-menu is-hidden">
+        <div class="container-menu">
+            <button class="close-buttom-header">
+                <svg class="close-menu">
+                    <use href="./images/spritetwo.svg#nclose_24px"></use>
+                </svg>
+            </button>
+            <ul class="menu-list list">
+                <li class="menu-list__item"> <a href="" class="menu-link">Студия</a> </li>
+                <li class="menu-list__item"> <a href="" class="menu-link">Портфолио</a> </li>
+                <li class="menu-list__item"> <a href="" class="menu-link">Контакты</a> </li>
+            </ul>
+
+
+            <div>
+                <ul class="menu-contact list">
+                    <li class="menu-contact__link "> <a class="menu-contact__link-big menu-contact__link-big-small"
+                            href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="menu-contact__link"> <a href="mailto: info@devstudio.com"
+                            class="menu-contact__link-big-small">info@devstudio.com</a></li>
+                </ul>
+
+                <ul class="header-menu__social list">
+                    <li class="header-menu__soc-side">Instagram</li>
+                    <li class="header-menu__soc-side">Twitter</li>
+                    <li class="header-menu__soc-side">Facebook</li>
+                    <li class="header-menu__soc-side">LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </header>
 
     <!-- main -->
@@ -70,9 +107,10 @@
                     <div class="spec__cart-wrap">
                         <picture>
                             <source srcset="./images/desktop/portfolio-desktop/firstx.jpg 2x, ./images/desktop/portfolio-desktop/first.jpg  1x" media="(min-width: 1200px)">
-                            <source srcset="./images/tablet/tablet-portfolio/firstx.jpg 2x ./images/tablet/tablet-portfolio/first.jpg 1x" media="(min-width: 768px)">
+                            <source srcset="./images/tablet/tablet-portfolio/firstx.jpg 2x, ./images/tablet/tablet-portfolio/first.jpg 1x"
+                                media="(min-width: 768px)">
                             <source srcset="./images/mobile/mobile-portfolio/firstx.jpg 2x, ./images/mobile/mobile-portfolio/first.jpg 1x" media="(min-width: 320px)">
-                            <img class="our-team-list__img" src="./images/mobile/mobile-portfolio/first.jpg" alt="Технокряк" width="370">
+                            <img class="spec__cards-img" src="./images/mobile/mobile-portfolio/first.jpg" alt="Технокряк" min-width="370">
                         </picture>
                         <p class="spec__info">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -89,11 +127,11 @@
                     <picture>
                         <source srcset="./images/desktop/portfolio-desktop/secondx.jpg 2x, ./images/desktop/portfolio-desktop/second.jpg  1x"
                             media="(min-width: 1200px)">
-                        <source srcset="./images/tablet/tablet-portfolio/secondx.jpg 2x ./images/tablet/tablet-portfolio/secondx.jpg 1x"
+                        <source srcset="./images/tablet/tablet-portfolio/srcondx.jpg 2x, ./images/tablet/tablet-portfolio/second.jpg 1x"
                             media="(min-width: 768px)">
                         <source srcset="./images/mobile/mobile-portfolio/secondx.jpg 2x, ./images/mobile/mobile-portfolio/second.jpg 1x"
                             media="(min-width: 320px)">
-                        <img class="our-team-list__img" src="./images/mobile/mobile-portfolio/second.jpg" alt="Дизайн" width="370">
+                        <img class="spec__cards-img" src="./images/mobile/mobile-portfolio/second.jpg" alt="Дизайн" width="370">
                     </picture>
                     <div class="border-item">
                         <h2 class="spec__title">Постер New Orlean vs Golden Star</h2>
@@ -106,11 +144,11 @@
                         <source
                             srcset="./images/desktop/portfolio-desktop/thirdx.jpg 2x, ./images/desktop/portfolio-desktop/third.jpg  1x"
                             media="(min-width: 1200px)">
-                        <source srcset="./images/tablet/tablet-portfolio/thirdx.jpg 2x ./images/tablet/tablet-portfolio/third.jpg 1x"
-                            media="(min-width: 768px)">
+                    <source srcset="./images/tablet/tablet-portfolio/thirdx.jpg 2x, ./images/tablet/tablet-portfolio/third.jpg 1x"
+                        media="(min-width: 768px)">
                         <source srcset="./images/mobile/mobile-portfolio/thirdx.jpg 2x, ./images/mobile/mobile-portfolio/third.jpg 1x"
                             media="(min-width: 320px)">
-                        <img class="our-team-list__img" src="./images/mobile/mobile-portfolio/third.jpg" alt="Ресторан Seafood" width="370">
+                        <img class="spec__cards-img" src="./images/mobile/mobile-portfolio/third.jpg" alt="Ресторан Seafood" width="370">
                     </picture>
                     <h2 class="spec__title">Ресторан Seafood</h2>
                     <p class="spec__specilization">Приложение</p>
@@ -124,7 +162,7 @@
                             media="(min-width: 768px)">
                         <source srcset="./images/mobile/mobile-portfolio/forthx.jpg 2x, ./images/mobile/mobile-portfolio/forth.jpg 1x"
                             media="(min-width: 320px)">
-                        <img class="our-team-list__img" src="./images/mobile/mobile-portfolio/forth.jpg" alt="Проект Prime" width="370">
+                        <img class="spec__cards-img" src="./images/mobile/mobile-portfolio/forth.jpg" alt="Проект Prime" width="370">
                     </picture>
                     <h2 class="spec__title">Проект Prime</h2>
                     <p class="spec__specilization">Маркетинг</p>
@@ -134,11 +172,11 @@
                      <picture>
                         <source srcset="./images/desktop/portfolio-desktop/fifthx.jpg 2x, ./images/desktop/portfolio-desktop/fifth.jpg  1x"
                             media="(min-width: 1200px)">
-                        <source srcset="./images/tablet/tablet-portfolio/fifthx.jpg 2x ./images/tablet/tablet-portfolio/fifth.jpg 1x"
-                            media="(min-width: 768px)">
+                    <source srcset="./images/tablet/tablet-portfolio/fifthx.jpg 2x, ./images/tablet/tablet-portfolio/fifth.jpg 1x"
+                        media="(min-width: 768px)">
                         <source srcset="./images/mobile/mobile-portfolio/fifthx.jpg 2x, ./images/mobile/mobile-portfolio/fifthx.jpg 1x"
                             media="(min-width: 320px)">
-                        <img class="our-team-list__img" src="./images/mobile/mobile-portfolio/fifthx.jpg" alt="Проект Boxes" width="370">
+                        <img class="spec__cards-img" src="./images/mobile/mobile-portfolio/fifthx.jpg" alt="Проект Boxes" width="370">
                     </picture>
                     <h2 class="spec__title">Проект Boxes</h2>
                     <p class="spec__specilization">Приложение</p>
@@ -148,11 +186,12 @@
                     <picture>
                         <source srcset="./images/desktop/portfolio-desktop/sixthx.jpg 2x, ./images/desktop/portfolio-desktop/sixth.jpg  1x"
                             media="(min-width: 1200px)">
-                        <source srcset="./images/tablet/tablet-portfolio/sixthx.jpg 2x ./images/tablet/tablet-portfolio/sixthx.jpg 1x"
+                            
+                        <source srcset="./images/tablet/tablet-portfolio/sixthx.jpg 2x, ./images/tablet/tablet-portfolio/sixth.jpg 1x"
                             media="(min-width: 768px)">
                         <source srcset="./images/mobile/mobile-portfolio/sixthx.jpg 2x, ./images/mobile/mobile-portfolio/sixthx.jpg 1x"
                             media="(min-width: 320px)">
-                        <img class="our-team-list__img" src="./images/mobile/mobile-portfolio/sixthx.jpg " alt="Inspiration has no Borders" width="370">
+                        <img class="spec__cards-img" src="./images/mobile/mobile-portfolio/sixthx.jpg " alt="Inspiration has no Borders" width="370">
                     </picture>
                     <h2 class="spec__title">Inspiration has no Borders</h2>
                     <p class="spec__specilization">Веб-сайт</p>
@@ -162,11 +201,11 @@
                     <picture>
                         <source srcset="./images/desktop/portfolio-desktop/seventhx.jpg 2x, ./images/desktop/portfolio-desktop/seventh.jpg  1x"
                             media="(min-width: 1200px)">
-                        <source srcset="./images/tablet/tablet-portfolio/seventhx.jpg 2x ./images/tablet/tablet-portfolio/seventh.jpg 1x"
-                            media="(min-width: 768px)">
+                        <source srcset="./images/tablet/tablet-portfolio/seventhx.jpg 2x, ./images/tablet/tablet-portfolio/seventh.jpg 1x"
+                           media="(min-width: 768px)">
                         <source srcset="./images/mobile/mobile-portfolio/seventh.jpg 2x, ./images/mobile/mobile-portfolio/seventh.jpg 1x"
                             media="(min-width: 320px)">
-                        <img class="our-team-list__img" src="./images/mobile/mobile-portfolio/seventh.jpg " alt="Издание Limited Edition"
+                        <img class="spec__cards-img" src="./images/mobile/mobile-portfolio/seventh.jpg " alt="Издание Limited Edition"
                             width="370">
                     </picture>
                     <h2 class="spec__title">Издание Limited Edition</h2>
@@ -178,11 +217,11 @@
                         <source
                             srcset="./images/desktop/portfolio-desktop/eightthx.jpg 2x, ./images/desktop/portfolio-desktop/eightth.jpg  1x"
                             media="(min-width: 1200px)">
-                        <source srcset="./images/tablet/tablet-portfolio/eightthx.jpg 2x ./images/tablet/tablet-portfolio/eightth.jpg 1x"
+                        <source srcset="./images/tablet/tablet-portfolio/eightthx.jpg 2x, ./images/tablet/tablet-portfolio/eightth.jpg 1x"
                             media="(min-width: 768px)">
                         <source srcset="./images/mobile/mobile-portfolio/eightthx.jpg 2x, ./images/mobile/mobile-portfolio/eightthx.jpg 1x"
                             media="(min-width: 320px)">
-                        <img class="our-team-list__img" src="./images/mobile/mobile-portfolio/eightthx.jpg " alt="Проект LAB"
+                        <img class="spec__cards-img" src="./images/mobile/mobile-portfolio/eightthx.jpg " alt="Проект LAB"
                             width="370">
                     </picture>
                     <h2 class="spec__title">Проект LAB</h2>
@@ -198,7 +237,7 @@
                             media="(min-width: 768px)">
                         <source srcset="./images/mobile/mobile-portfolio/ninethx.jpg, ./images/mobile/mobile-portfolio/nineth.jpg 1x"
                             media="(min-width: 320px)">
-                        <img class="our-team-list__img" src="./images/mobile/mobile-portfolio/nineth.jpg" alt="Growing Business" width="370">
+                        <img class="spec__cards-img" src="./images/mobile/mobile-portfolio/nineth.jpg" alt="Growing Business" width="370">
                     </picture>
                     <h2 class="spec__title">Growing Business</h2>
                     <p class="spec__specilization">Приложение</p>
@@ -212,62 +251,63 @@
 
     <!-- footer -->
 <footer class="footer">
-    <div class="container">
-        <div class="footer__contact">
-            <a class="logo" href="/"> <span class="logo--white">Web</span><span class="logo--blue">Studio</span></a>
+    <div class="container section">
+        <div class="footer__tab">
+            <div class="footer__contact">
+                <a class="logo" href="/"> <span class="logo--white">Web</span><span class="logo--blue">Studio</span></a>
 
 
-            <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
-            <div class="footer__mail"> <a class="footer__tell-mail" href="mailto:info@example.com">info@example.com</a>
+                <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+                <div class="footer__mail"> <a class="footer__tell-mail"
+                        href="mailto:info@example.com">info@example.com</a>
+                </div>
+                <a class="footer__tell-mail" href="tell:+380991111111">+38 099 111 11 11</a>
             </div>
-            <a class="footer__tell-mail" href="tell:+380991111111">+38 099 111 11 11</a>
+
+            <div class="footer__join-us">
+                <h2 class="footer__join">присоединяйтесь</h2>
+                <ul class="social-list list">
+                    <li>
+                        <a href="" class="social-list__item"><svg class="social-list__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram-2"> </use>
+                            </svg></a>
+
+                    </li>
+                    <li>
+                        <a href="" class="social-list__item"> <svg class="social-list__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter-1"></use>
+                            </svg></a>
+
+                    </li>
+                    <li>
+                        <a href="" class="social-list__item"> <svg class="social-list__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook-1"></use>
+                            </svg></a>
+
+                    </li>
+                    <li>
+                        <a href="" class="social-list__item"><svg class="social-list__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                            </svg></a>
+
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div>
-            <h2 class="footer__join">присоединяйтесь</h2>
-            <ul class="social-list list">
-                <li>
-                    <a href="" class="social-list__item"><svg class="social-list__icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-instagram-2"> </use>
-                        </svg></a>
-
-                </li>
-                <li>
-                    <a href="" class="social-list__item"> <svg class="social-list__icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-twitter-1"></use>
-                        </svg></a>
-
-                </li>
-                <li>
-                    <a href="" class="social-list__item"> <svg class="social-list__icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-facebook-1"></use>
-                        </svg></a>
-
-                </li>
-                <li>
-                    <a href="" class="social-list__item"><svg class="social-list__icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                        </svg></a>
-
-                </li>
-            </ul>
-        </div>
 
         <form name="email classsub-email">
-            <label>
-                <span class="sub-name">Подпишитесь на рассылку</span>
-                <div class="subscripe"><input type="email" name="email" placeholder="email" class="sub-input" />
-                    <button class="sub-buttom " type="submit">Подписаться <span class="icon"></span> </button>
+            <label class="footer-sub">
+                <div class="footer__sub-section"><span class="sub-name">Подпишитесь на рассылку</span>
+                    <input type="email" name="email" placeholder="email" class="sub-input" />
                 </div>
 
+                <button class="sub-buttom " type="submit">Подписаться <span class="icon"></span> </button>
             </label>
 
         </form>
 
     </div>
-
-
-
 
 </footer>
 

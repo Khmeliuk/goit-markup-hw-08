@@ -6,33 +6,68 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/desktop/hero-min.jpg);
+    url(../images/mobile/Header-img-min.jpg);
+  @media (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/mobile/Heade2x-min.jpg);
+    }
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 100%;
+  max-width: 480px;
   height: auto;
   margin: auto auto;
   display: block;
   color: $banner-color;
   font-weight: 900;
+
   // padding-top: 200px;
   // margin-bottom: 30px;
-  @media screen and(min-width:768px) {
-    max-width: 1199px;
-  }
-  @media screen and(min-width:1200px) {
-    max-width: 1600px;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (-o-min-device-pixel-ratio: 2/1),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .banner-section {
-      background-image: url(".././images/desktop/hero2x-min.jpg");
+  @media screen and(min-width:480px) {
+    & {
+      max-width: 1200px;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/tablet/header.jpg);
+    }
+    @media (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(/images/tablet/Header2x-min.jpg);
+      }
     }
   }
+
+  @media screen and(min-width:768px) {
+    max-width: 1600px;
+    & {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/desktop/hero-min.jpg);
+    }
+    @media (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(/images/desktop/hero2x-min.jpg);
+      }
+    }
+  }
+
   &__title {
     font-size: 26px;
     // font-size: 44px;
